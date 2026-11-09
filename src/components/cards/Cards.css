@@ -1,0 +1,47 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  gap: 10px;
+} 
+
+.card {
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.card h3 {
+  color: #254da8;
+  font-size: 14px;
+  margin: 0 0 3px;
+  font-weight: bold;
+}
+
+.card strong {
+  font-size: 38px;
+  color: black;
+  line-height: 1.1;
+}
+
+.card span {
+  font-size: 14px;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
