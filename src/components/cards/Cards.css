@@ -6,7 +6,7 @@
 } 
 
 .card {
-  background-color: white;
+  background-color: transparent;
   border: 1px solid #999;
   border-radius: 4px;
   padding: 25px;
@@ -14,10 +14,11 @@
   flex-direction: column;
   justify-content: center;
   min-height: 80px;
+  box-sizing: border-box;
 }
 
 .card h3 {
-  color: #254da8;
+  color: #fff;
   font-size: 14px;
   margin: 0 0 3px;
   font-weight: bold;
@@ -25,13 +26,13 @@
 
 .card strong {
   font-size: 38px;
-  color: black;
+  color: #fff;
   line-height: 1.1;
 }
 
 .card span {
   font-size: 14px;
-  color: black;
+  color: #fff;
 }
 
 @media (max-width: 900px) {

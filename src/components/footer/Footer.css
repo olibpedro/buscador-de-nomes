@@ -3,8 +3,24 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  box-sizing: border-box;
   color: #fff;
   text-align: center;
   font-size: 12px;
   padding: 10px 0;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 11px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
 }
