@@ -13,6 +13,7 @@
 
 @media (max-width: 768px) {
   .footer {
+    position: relative;
     font-size: 11px;
     padding: 10px;
   }
@@ -20,6 +21,7 @@
 
 @media (max-width: 480px) {
   .footer {
+    position: relative;
     font-size: 10px;
     padding: 8px 12px;
   }

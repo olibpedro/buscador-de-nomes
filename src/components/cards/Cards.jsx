@@ -9,6 +9,16 @@ function Card({ titulo, children }) {
   );
 }
 
+function formatarPercentual(resultado) {
+  const percentual = Number(resultado);
+
+  if (percentual < 0.01 && percentual > 0) {
+    return percentual.toFixed(4).replace(".", ",");
+  }
+
+  return percentual.toFixed(2).replace(".", ",");
+}
+
 function formatarNumero(valor) { 
     return Number(valor).toLocaleString("pt-BR");
   }
@@ -16,7 +26,7 @@ function formatarNumero(valor) {
 function Cards({ resultado, tipoNome }) {
   if (!resultado) return null;
   return (
-    <section className="cards">      
+    <section className={`cards ${tipoNome === "sobrenome" ? "sobrenome" : ""}`}>      
 
         <Card titulo="POPULAÇÃO">
           <strong>{formatarNumero(resultado.frequencia)}</strong>
@@ -25,7 +35,7 @@ function Cards({ resultado, tipoNome }) {
 
         <Card titulo="PERCENTUAL">
           <strong>
-            {Number(resultado.percent).toFixed(2).replace(".", ",")}%
+            {formatarPercentual(resultado.percent)}%
           </strong>
           <span>da população</span>
         </Card>
