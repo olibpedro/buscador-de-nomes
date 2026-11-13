@@ -2,6 +2,15 @@
 
 <p>Aplicação web em React que consome a "API Nomes" do IBGE com a finalidade de retornar a quantidade de pessoas que possuem um nome em específico.</p>
 
+### 📚 Conceitos aplicados 
+
+- ReactJS
+- Props
+- Renderização condicional
+- Eventos DOM
+- Hooks
+- Requisições HTTP
+
 ### 🖥️ Instalando o projeto
 
 ```bash
